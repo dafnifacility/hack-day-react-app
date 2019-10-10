@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import aaa from './aaaa.PNG';
-import tom from './tom.PNG';
+import tom from './spinningTom.gif';
 import './App.css';
 
 const useStyles = makeStyles(theme => ({
@@ -30,20 +30,16 @@ function App() {
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
+            <img src={aaa} height="50" />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            JamesBot
           </Typography>
-          <Button color="inherit">Login</Button>
+          <h2 color="Red">Connected!</h2>
         </Toolbar>
       </AppBar>
       <header className="App-header">
-        <h1>
-          JamesBot
-        </h1>
-        <img src={aaa} />
-        <img src={tom} />
+        <img src={tom} height="500" />
       </header>
     </div>
   );

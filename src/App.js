@@ -99,6 +99,7 @@ function keyDown(event) {
   }
 }
 
+
 function keyUp(event) {
   if (keyPressed) {
     if (
